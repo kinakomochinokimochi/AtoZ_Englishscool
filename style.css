@@ -1218,7 +1218,7 @@ footer small {
     padding: 40px;
   }
   .flow_lesson .flow_lesson_card::after {
-    top:106%;
+    top:625px;
     right: 50%;
     transform: translateX(50%);
     content: '\f078';
