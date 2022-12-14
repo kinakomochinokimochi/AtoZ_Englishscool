@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae4dcd6f2f.js" crossorigin="anonymous"></script>
+  <title>AtoZ英会話スクール/無料体験レッスン</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="menuButton_mask" id="menuButton_mask"></div>
+    <div class="header_top" id="header_top">
+      <div class="header_top_title" id="header_top_title">
+        <a href="index.html" target="_blank" rel="noopener noreferrer">
+          <h1>AtoZ</h1>
+          <p>英会話スクール</p>
+        </a>
+      </div>
+        <a class="header_top_menuButton" id="header_top_menuButton">
+          <div class="header_top_menuButton_list"></div>
+          <div class="header_top_menuButton_list"></div>
+          <div class="header_top_menuButton_list"></div>
+        </a>
+    </div>
+    <nav class="humbuger_menu" id="humbuger_menu">
+      <ul>
+        <li class="humbuger_menu_list">
+          <a href="index.html#feature" target="_blank" rel="noopener noreferrer">AtoZ英会話スクールの特徴</a>
+        </li>
+        <li class="humbuger_menu_list">
+          <a href="index.html#voice" target="_blank" rel="noopener noreferrer">受講生の声</a>
+        </li>
+        <li class="humbuger_menu_list">
+          <a href="index.html#summary" target="_blank" rel="noopener noreferrer">スクール概要</a>
+        </li>
+      </ul>
+      <a class="humbuger_menu_btn" href="#" id="humbuger_menu_btn">無料体験に申し込む</a>
+    </nav>
+  </header>
+
+  <main class="trial_main container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb_item"><a href="index.html" class="breadcrumb_link">TOP</a></li>
+      <li class="breadcrumb_item">無料体験レッスン</li>
+    </ul>
+    <section class="flow_lesson">
+      <h2 class="trial_subTitle">無料体験レッスンの流れ</h2>
+      <div class="flow_lesson_list">
+        <div class="flow_lesson_card card">
+          <h3>予約フォーム記入・送信</h3>
+          <img src="img/reserve.jpg" alt="携帯で予約">
+          <p>予約フォームに必要事項を記入し、送信して下さい。</p>
+        </div>
+        <div class="flow_lesson_card card">
+          <h3>事前カウンセリング・<br>英語力チェック</h3>
+          <img src="img/kaunsering.jpg" alt="カウンセリング">
+          <p>目標や学習の悩みをお伺いしたり、ご都合の良い日時をお伺いして、無料体験レッスンをご案内します。</p>
+        </div>
+        <div class="flow_lesson_card card">
+          <h3>スクール or オンラインで<br>体験レッスンに参加</h3>
+          <img src="img/study.jpg" alt="英語で勉強">
+          <p>ご希望の体験レッスンに参加頂けます。英語を通じて楽しみや新たな発見を体験できるかと思います。</p>
+        </div>
+        <div class="flow_lesson_card card">
+          <h3>アフターカウンセリング</h3>
+          <img src="img/kaunsering2.jpg" alt="アフターカウンセリング">
+          <p>体験レッスン終了後、カウンセラーより今後の学習アドバイスを致します。</p>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <h2 class="trial_subTitle">お客様情報入力・お申込みフォーム</h2>
+      <form action="from.cgi" method="post">
+        <table>
+          <tr>
+            <td>お名前<span class="input_must">※必須</span></td>
+            <td><input type="text" name="user_name" placeholder="例：山田 太郎"></td>
+          </tr>
+          <tr>
+            <td>フリガナ<span class="input_must">※必須</span></td>
+            <td><input type="tel" name="user_tel" placeholder="例：ヤマダ タロウ"></td>
+          </tr>
+          <tr>
+            <td>電話番号<span class="input_must">※必須</span></td>
+            <td><input type="tel" name="user_tel" placeholder="例：09012345678"></td>
+          </tr>
+          <tr>
+            <td>E-mail<span class="input_must">※必須</span></td>
+            <td><input type="email" name="user_email" placeholder="例：yamada@example.com"></td>
+          </tr>
+          <tr>
+            <td>性別<span class="input_must">※必須</span></td>
+            <td>
+            <label><input type="radio" name="gender" value="男性">男性</label>
+            <label><input type="radio" name="gender" value="女性">女性</label>
+          </td>
+          </tr>
+          <tr>
+            <td>体験レッスンコース<span class="input_must"></span></td>
+            <td>
+              <select name="catalyst">
+                <option value="">下記から選択してください</option>
+                <option value="グループレッスン">グループレッスン</option>
+                <option value="マンツーマンレッスン">マンツーマンレッスン</option>
+                <option value="オンラインレッスン">オンラインレッスン</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>体験希望日時【第1希望】<span class="input_must"></span></td>
+            <td class="date_time">
+              日付
+              <input type="date"  preferred_data min="2022-12-01" max="2023-12-31"><br>
+              時間
+              <input type="time" step="1800" list="data-list" >
+              <datalist id="data-list">
+                <option value="10:00"></option>
+                <option value="10:30"></option>
+                <option value="11:00"></option>
+                <option value="11:30"></option>
+                <option value="12:00"></option>
+                <option value="12:30"></option>
+                <option value="13:00"></option>
+                <option value="13:30"></option>
+                <option value="14:00"></option>
+                <option value="14:30"></option>
+                <option value="15:00"></option>
+                <option value="15:30"></option>
+                <option value="16:00"></option>
+                <option value="16:30"></option>
+                <option value="17:00"></option>
+                <option value="17:30"></option>
+                <option value="18:00"></option>
+                <option value="18:30"></option>
+                <option value="19:00"></option>
+                <option value="19:30"></option>
+                <option value="20:00"></option>
+                <option value="20:30"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>体験希望日時【第2希望】</td>
+            <td class="date_time">
+              日付
+              <input type="date"  preferred_data min="2022-04-01" max="2023-12-31"><br>
+              時間
+              <input type="time" step="1800" list="data-list" >
+            </td>
+          </tr>
+          <tr>
+            <td>体験希望日時【第3希望】</td>
+            <td class="date_time">
+              日付
+              <input type="date"  preferred_data min="2022-04-01" max="2023-12-31"><br>
+              時間
+              <input type="time" step="1800" list="data-list" >
+            </td>
+          </tr>
+          <tr>
+            <td>体験申し込みのきっかけ<br>（複数回答可）</td>
+            <td>
+              <label><input type="checkbox" name="motivation" value="広告をみて">広告を見て</label><br>
+              <label><input type="checkbox" name="motivation" value="ホームページを見て">ホームページを見て</label><br>
+              <label><input type="checkbox" name="motivation" value="口コミ">口コミ</label><br>
+              <label><input type="checkbox" name="motivation" value="その他">その他</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>メッセージ</td>
+            <td>
+              <textarea name="user_message"></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="privacy">
+        <div class="privacy_inner">
+          <p>個人情報をご入力いただく目的
+            <br>
+            本ウェブサイトは、サービスに関するお問合せ・お見積もり、もしくはその内容の確認手段として個人情報の入力をお願いしております。つまり、お客様にご入力頂いた個人情報は、お客様に明示した収集目的の範囲内で利用いたします。個人情報をお客様の同意なくお客様に明示した収集目的以外で利用することはありません。&nbsp;
+            <br>
+            個人情報の保護・管理
+            <br>
+            <br>
+            本ウェブサイトは、サービスに関するお問合せ・お見積もり、もしくはその内容の確認手段として個人情報の入力をお願いしております。つまり、お客様にご入力頂いた個人情報は、お客様に明示した収集目的の範囲内で利用いたします。個人情報をお客様の同意なくお客様に明示した収集目的以外で利用することはありません。&nbsp;
+            <br>
+            <br>
+            個人情報の保護・管理
+            <br>
+            <br>
+            弊社はお客様にご入力頂いた個人情報について、適切かつ厳重な管理体制のもと、その保護に努めます。個人情報を第三者に開示、譲渡することはございません。但し下記に該当する場合はその限りではございません。
+            <br>
+            １．お客様の同意がある場合
+            <br>
+            ２．業務委託会社に対して、お客様に明示した収集目的を実施すべく個人情報を開示する必要がある場合"
+            <br>
+            ３．法律の適用を受ける場合や法的強制力のある情報提供を求められた場合
+            <br>
+            本ポリシーの内容は、必要に応じて改訂することがあります。ご利用の際には本ページの最新の内容をご確認ください。 
+          </p>
+        </div>
+        <div class="privacy_checkbtn">
+          <label><input type="checkbox" name="privacy" id="privacy">個人保護方針に同意する</label><br>
+        </div>
+
+        </div>
+        <div class="form_button">
+          <button type="submit" id="form_submit">確認する</button>
+          <input type="reset" value="入力内容をリセット">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <ul class="footer_menu">
+        <li>
+          <p>レッスン内容</p>
+          <ul>
+            <li><a href="">グループレッスン</a></li>
+            <li><a href="">マンツーマンレッスン</a></li>
+            <li><a href="">オンラインレッスン</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>講師紹介</p>
+          <ul>
+            <li><a href="">講師について</a></li>
+            <li><a href="">講師一覧</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>スクール情報</p>
+          <ul>
+            <li><a href="">スクール概要</a></li>
+            <li><a href="">アクセスマップ</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+        <li>
+          <p>体験レッスン・お問い合わせ</p>
+          <ul>
+            <li><a href="#">体験レッスン</a></li>
+            <li><a href="">お問い合わせ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <small>&copy; Copyright AtoZ Corporation. </small>
+    </div>
+  </footer>
+  <div id="pageTop">
+    <a href="#">
+      <img src="img/pageTop.png" width="88px" height="88px" alt="トップページボタン">
+    </a>
+  </div>
+</body>
+</html>
