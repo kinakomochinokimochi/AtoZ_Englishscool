@@ -1258,7 +1258,7 @@ form tr > td:nth-of-type(2) {
 
 form input:not([type="radio"], [type="checkbox"],[type="reset"]),
 form select {
- width: 20rem;
+ width: 30m;
  max-width: 100%;
  padding: 0.8em;
 }
