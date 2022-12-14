@@ -771,7 +771,7 @@ span {
 
 .summary_slide {
   position: absolute;
-  background: url("img/maru.png");
+  background: url("kinakomochinokimochi/AtoZ_Englishscool/pageTop.png");
   background-repeat: repeat;
   width: 100%;
   height: 100%;
@@ -1288,7 +1288,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(img/calender.png) no-repeat;
+  background: url(kinakomochinokimochi/AtoZ_Englishscool/calender.png) no-repeat;
   background-size: contain;
   width: 16px;
   height: 16px;
@@ -1322,7 +1322,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(img/under_arrow.png) no-repeat;
+  background: url(kinakomochinokimochi/AtoZ_Englishscool/under_arrow.png) no-repeat;
   background-size: contain;
   width: 14px;
   height: 14px;
