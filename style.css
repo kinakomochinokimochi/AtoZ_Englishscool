@@ -772,7 +772,7 @@ span {
 
 .summary_slide {
   position: absolute;
-  background-image: url("img/summary_img.jpg");
+  background-image: url("https://github.com/kinakomochinokimochi/AtoZ_Englishscool/blob/main/summary_img.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1287,7 +1287,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(img/calender.png) no-repeat;
+  background: url(https://github.com/kinakomochinokimochi/AtoZ_Englishscool/blob/main/calender.png?raw=true) no-repeat;
   background-size: contain;
   width: 16px;
   height: 16px;
@@ -1321,7 +1321,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(img/under_arrow.png) no-repeat;
+  background: url(https://github.com/kinakomochinokimochi/AtoZ_Englishscool/blob/main/under_arrow.png?raw=true) no-repeat;
   background-size: contain;
   width: 14px;
   height: 14px;
